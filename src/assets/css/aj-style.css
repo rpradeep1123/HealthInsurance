@@ -819,7 +819,7 @@ ul.car-list-type > li .price .button-choose a {
     border-radius: 3px;
     background-color: #da3214;
     display: inline-block;
-    margin: 5px 0;
+    margin: 5px;
     width: 100px !important;
     text-align: center !important;
 }
