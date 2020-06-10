@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CruiseListComponent } from './cruise-list/cruise-list.component';
+import { OnlineFormComponent } from './online-form/online-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CruiseListComponent,
+    OnlineFormComponent
   ],
   imports: [
     BrowserModule,
