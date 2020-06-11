@@ -1,1 +1,84 @@
-<router-outlet></router-outlet>
+<div class="wrapper">
+    <app-header></app-header>
+    <div class="content-wrapper">
+        <div class="layout-theme">
+            <!-- Start Header -->
+            <header id="header" class="header-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="logo" class="logo">
+                                <a href="#" title="exactly">
+                                    <img src="../../assets/images/day-logo.png" alt="" class="image-logoh">
+                                </a>
+                            </div>
+                            <div class="search">
+
+
+                                <div class="navigation">
+                                    <div class="mobile-menu">
+                                        <i class="icon-align-justify"></i>
+                                    </div>
+                                    <div id="main-menu" class="main-menu">
+                                        <ul class="menu-responsive">
+                                            <li>
+                                                <a href="#" title="">HOME</a>
+                                            </li>
+                                            <li>
+                                                <a href="cruise-list.html" title="">Form-1</a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="online-form.html" title="">Form-2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">Form-3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">Form-4</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="">Form-5</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- End Header -->
+
+            <!-- Start Social -->
+            <div class="float-sm">
+                <div class="fl-fl float-wt">
+                    <i class="fa fa-whatsapp  new-icoright"></i>
+                    <a href="" target="_blank">whatsapp</a>
+                </div>
+                <div class="fl-fl float-fb">
+                    <i class="fa fa-facebook  new-icoright"></i>
+                    <a href="" target="_blank">facebook</a>
+                </div>
+                <div class="fl-fl float-tw">
+                    <i class="fa fa-twitter  new-icoright"></i>
+                    <a href="" target="_blank">Twitter us!</a>
+                </div>
+                <div class="fl-fl float-lin">
+                    <i class="fa fa-linkedin  new-icoright"></i>
+                    <a href="" target="_blank">Linkedin</a>
+                </div>
+                <div class="fl-fl float-ins">
+                    <i class="fa fa-instagram new-icoright"></i>
+                    <a href="" target="_blank">instagram</a>
+                </div>
+                <div class="fl-fl float-pn">
+                    <i class="fa fa-google-plus new-icoright"></i>
+                    <a href="" target="_blank"> Google +</a>
+                </div>
+            </div>
+            <!-- End Social -->
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

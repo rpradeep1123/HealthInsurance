@@ -849,7 +849,7 @@
     };
 
     var wpt__ToggleSidebar = function(){
-    	$('.sidebar').each(function() {
+    	$('.inner-sidebar').each(function() {
     		$('span.icon').on('click', function(){
     			$(this).toggleClass('clicked');
     			$(this).closest('.widget-sidebar').children('.widget-content').slideToggle();

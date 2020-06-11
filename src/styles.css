@@ -1,1 +1,121 @@
 /* You can add global styles to this file, and also import other style files */
+/* -- airline slider -- */
+.airlinemainrowdiv {
+    background-color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px #ddd;
+    -webkit-box-shadow: 2px 2px 10px #ddd;
+    -o-box-shadow: 2px 2px 10px #ddd;
+    -moz-box-shadow: 2px 2px 10px #ddd;
+    padding: 7px 3px;
+    border: #e4e4e4 solid 1px;
+}
+.allairlinetxthead h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-top: 14px;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+}
+.airlinecontslider {
+    text-align: center;
+    /* background-color: #efefef; */
+    padding: 0px 5px;
+    margin: 0 3px;
+    border-right: #ddd solid 1px;
+}
+.airlinecontslider img {
+    width: 100% !important;
+    margin: 0 auto;
+}
+.airlinecontslider p {
+    margin-bottom: 0;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+    border-top: #ddd solid 2px;
+}
+.airlinecontslider p i {
+    font-size: 13px;
+}
+/* -- airline slider close -- */
+
+.slick-prev {
+    left: -18px;
+}
+
+.slick-next {
+    right: -11px;
+}
+
+.slick-prev:before {
+    content: "\e875";
+    padding: 0px 0px;
+}
+
+.slick-next:before {
+    content: "\e876";
+    padding: 0px 0px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: "Linearicons-Free";
+    font-size: 30px;
+    color: #d4d4d4;
+}
+.btn-primary {
+    background-color: #da3214;
+     border-color: #da3214;   
+ }
+ .sendemailmaindivrightside{
+    padding: 0 0;
+}
+.sendemailmaindivrightside button{
+    font-weight: normal;  
+    background-color: #2f7314;
+    border: none;
+}
+.listsendemailmaindiv{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 8px;
+    background-color: #fffdf0;
+    border: #eaeaea solid 1px;
+}
+.sendemaillabelfull{
+    width: 100%;
+}
+.sendemailcontlist h3{
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #888;
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+.sendemailcontlist img{
+    width: 50%;
+}
+.sendemailcontlist h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+}
+.sendemailcontlist h5 i{
+    font-size: 12px;
+}
+
+.listheadericonstop ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    /* text-align: right; */
+}
+.listheadericonstop ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 5px;
+}

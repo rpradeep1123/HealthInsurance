@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import '../../assets/js/custom.js';
 
 @Component({
   selector: 'app-online-form',

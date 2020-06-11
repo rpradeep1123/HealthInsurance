@@ -24,9 +24,32 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/bootstrap-datetimepicker.min.css",
+              "src/assets/css/jquery-ui.css",
+              "src/assets/css/style.css",
+              "src/assets/css/aj-style.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/adminlte.min.css",
+              "src/assets/css/slick.css",
+              "src/assets/css/icomoon-font.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/adminlte.min.js",
+              "src/assets/js/tether.min.js",
+              "src/assets/js/popper.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/waypoints.min.js",
+              "src/assets/js/owl.carousel.js",
+              "src/assets/js/jquery-ui.js",
+              "src/assets/js/bootstrap-datetimepicker.js",              
+              "src/assets/js/gmap3.min.js",
+              "src/assets/js/slick.js",
+              "src/assets/js/custom.js",
+              "src/assets/js/template.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -120,6 +143,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "HealthInsurance"
 }

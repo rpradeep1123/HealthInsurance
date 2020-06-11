@@ -819,6 +819,7 @@
 
 .sidebar-right .widget-sidebar {
 	background-color: #fff;
+	position: relative;
 }
 
 .sidebar-right .widget-sidebar > h4,
@@ -842,6 +843,11 @@
 
 .sidebar-right .widget-sidebar .widget-content {
 	padding: 10px 10px 10px;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    width: 100%;
+    border:1px solid grey;
 }
 
 .sidebar-right .widget-sidebar.widget-banner a {

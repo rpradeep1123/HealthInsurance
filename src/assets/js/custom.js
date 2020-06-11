@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-
+   
     $(document).on("click", ".new-cl-sho-hi", function () {
 
         if ($(this).is(":checked")) {
