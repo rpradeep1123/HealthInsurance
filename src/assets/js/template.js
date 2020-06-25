@@ -669,184 +669,184 @@
     	})
     }
 
-    var wpt_SliderRange = function() {
-    	if( $().slider ) {
-	        $("#slider-range").slider({
-				range: true,
-				min: 0,
-				max: 1439,
-				values: [540, 1020],
-				slide: slideTime
-			});
-			function slideTime(event, ui){
-				var val0 = $("#slider-range").slider("values", 0),
-					val1 = $("#slider-range").slider("values", 1),
-					minutes0 = parseInt(val0 % 60, 10),
-					hours0 = parseInt(val0 / 60 % 24, 10),
-					minutes1 = parseInt(val1 % 60, 10),
-					hours1 = parseInt(val1 / 60 % 24, 10);
+    // var wpt_SliderRange = function() {
+    // 	if( $().slider ) {
+	//         $("#slider-range").slider({
+	// 			range: true,
+	// 			min: 0,
+	// 			max: 1439,
+	// 			values: [540, 1020],
+	// 			slide: slideTime
+	// 		});
+	// 		function slideTime(event, ui){
+	// 			var val0 = $("#slider-range").slider("values", 0),
+	// 				val1 = $("#slider-range").slider("values", 1),
+	// 				minutes0 = parseInt(val0 % 60, 10),
+	// 				hours0 = parseInt(val0 / 60 % 24, 10),
+	// 				minutes1 = parseInt(val1 % 60, 10),
+	// 				hours1 = parseInt(val1 / 60 % 24, 10);
 					
-				var startTime = getTime(hours0, minutes0);
-				var endTime = getTime(hours1, minutes1);
-				$("#time").text(startTime + ' - ' + endTime);
-			}
-			function getTime(hours, minutes) {
-				var time = null,
-				minutes = minutes + "";
-				if (hours < 12) {
-					time = "AM";
-				}
-				else {
-					time = "PM";
-				}
-				if (hours == 0) {
-					hours = 12;
-				}
-				if (hours > 12) {
-					hours = hours - 12;
-				}
-				if (minutes.length == 1) {
-					minutes = "0" + minutes;
-				}
-				return hours + ":" + minutes + " " + time;
-			}
-			slideTime();
-		};
-    }; // Filter Price
+	// 			var startTime = getTime(hours0, minutes0);
+	// 			var endTime = getTime(hours1, minutes1);
+	// 			$("#time").text(startTime + ' - ' + endTime);
+	// 		}
+	// 		function getTime(hours, minutes) {
+	// 			var time = null,
+	// 			minutes = minutes + "";
+	// 			if (hours < 12) {
+	// 				time = "AM";
+	// 			}
+	// 			else {
+	// 				time = "PM";
+	// 			}
+	// 			if (hours == 0) {
+	// 				hours = 12;
+	// 			}
+	// 			if (hours > 12) {
+	// 				hours = hours - 12;
+	// 			}
+	// 			if (minutes.length == 1) {
+	// 				minutes = "0" + minutes;
+	// 			}
+	// 			return hours + ":" + minutes + " " + time;
+	// 		}
+	// 		slideTime();
+	// 	};
+    // }; // Filter Price
 
-    var wpt_SliderRange_1 = function(){
-    	if( $().slider ) {
-	    	$("#slider-range-1").slider({
-				range: true,
-				min: 0,
-				max: 1439,
-				values: [540, 1020],
-				slide: slideTime
-			});
-			function slideTime(event, ui){
-				var val0 = $("#slider-range-1").slider("values", 0),
-					val1 = $("#slider-range-1").slider("values", 1),
-					minutes0 = parseInt(val0 % 60, 10),
-					hours0 = parseInt(val0 / 60 % 24, 10),
-					minutes1 = parseInt(val1 % 60, 10),
-					hours1 = parseInt(val1 / 60 % 24, 10);
+    // var wpt_SliderRange_1 = function(){
+    // 	if( $().slider ) {
+	//     	$("#slider-range-1").slider({
+	// 			range: true,
+	// 			min: 0,
+	// 			max: 1439,
+	// 			values: [540, 1020],
+	// 			slide: slideTime
+	// 		});
+	// 		function slideTime(event, ui){
+	// 			var val0 = $("#slider-range-1").slider("values", 0),
+	// 				val1 = $("#slider-range-1").slider("values", 1),
+	// 				minutes0 = parseInt(val0 % 60, 10),
+	// 				hours0 = parseInt(val0 / 60 % 24, 10),
+	// 				minutes1 = parseInt(val1 % 60, 10),
+	// 				hours1 = parseInt(val1 / 60 % 24, 10);
 					
-				var startTime = getTime(hours0, minutes0);
-				var endTime = getTime(hours1, minutes1);
-				$("#time-1").text(startTime + ' - ' + endTime);
-			}
-			function getTime(hours, minutes) {
-				var time = null,
-				minutes = minutes + "";
-				if (hours < 12) {
-					time = "AM";
-				}
-				else {
-					time = "PM";
-				}
-				if (hours == 0) {
-					hours = 12;
-				}
-				if (hours > 12) {
-					hours = hours - 12;
-				}
-				if (minutes.length == 1) {
-					minutes = "0" + minutes;
-				}
-				return hours + ":" + minutes + " " + time;
-			}
-			slideTime();
-		};
-    };
+	// 			var startTime = getTime(hours0, minutes0);
+	// 			var endTime = getTime(hours1, minutes1);
+	// 			$("#time-1").text(startTime + ' - ' + endTime);
+	// 		}
+	// 		function getTime(hours, minutes) {
+	// 			var time = null,
+	// 			minutes = minutes + "";
+	// 			if (hours < 12) {
+	// 				time = "AM";
+	// 			}
+	// 			else {
+	// 				time = "PM";
+	// 			}
+	// 			if (hours == 0) {
+	// 				hours = 12;
+	// 			}
+	// 			if (hours > 12) {
+	// 				hours = hours - 12;
+	// 			}
+	// 			if (minutes.length == 1) {
+	// 				minutes = "0" + minutes;
+	// 			}
+	// 			return hours + ":" + minutes + " " + time;
+	// 		}
+	// 		slideTime();
+	// 	};
+    // };
 
-    var wpt__FilterPrice = function() {
-        if( $().slider ) {
-            $( function() {
-                $( "#slider-range-2" ).slider({
-                  range: true,
-                  min: 50,
-                  max: 850,
-                  values: [ 50, 850 ],
-                  slide: function( event, ui ) {
-                    $( "#amount" ).val( ui.values[ 0 ] + "₹" + " - " + ui.values[ 1 ] + "₹" );
-                  }
-                });
-                $( "#amount" ).val( $( "#slider-range-2" ).slider( "values", 0 ) + "₹" + " - " + $( "#slider-range-2" ).slider( "values", 1 ) + "₹" );
-            });
-        }
-    }; // Filter Price
+    // var wpt__FilterPrice = function() {
+    //     if( $().slider ) {
+    //         $( function() {
+    //             $( "#slider-range-2" ).slider({
+    //               range: true,
+    //               min: 50,
+    //               max: 850,
+    //               values: [ 50, 850 ],
+    //               slide: function( event, ui ) {
+    //                 $( "#amount" ).val( ui.values[ 0 ] + "₹" + " - " + ui.values[ 1 ] + "₹" );
+    //               }
+    //             });
+    //             $( "#amount" ).val( $( "#slider-range-2" ).slider( "values", 0 ) + "₹" + " - " + $( "#slider-range-2" ).slider( "values", 1 ) + "₹" );
+    //         });
+    //     }
+    // }; // Filter Price
 
-    var wpt_SliderRange_3 = function(){
-    	if( $().slider ) {
-	    	$("#slider-range-3").slider({
-				range: true,
-				min: 0,
-				max: 1439,
-				values: [540, 1020],
-				slide: slideTime
-			});
-			function slideTime(event, ui){
-				var val0 = $("#slider-range-3").slider("values", 0),
-					val1 = $("#slider-range-3").slider("values", 1),
-					minutes0 = parseInt(val0 % 60, 10),
-					hours0 = parseInt(val0 / 60 % 24, 10),
-					minutes1 = parseInt(val1 % 60, 10),
-					hours1 = parseInt(val1 / 60 % 24, 10);
+    // var wpt_SliderRange_3 = function(){
+    // 	if( $().slider ) {
+	//     	$("#slider-range-3").slider({
+	// 			range: true,
+	// 			min: 0,
+	// 			max: 1439,
+	// 			values: [540, 1020],
+	// 			slide: slideTime
+	// 		});
+	// 		function slideTime(event, ui){
+	// 			var val0 = $("#slider-range-3").slider("values", 0),
+	// 				val1 = $("#slider-range-3").slider("values", 1),
+	// 				minutes0 = parseInt(val0 % 60, 10),
+	// 				hours0 = parseInt(val0 / 60 % 24, 10),
+	// 				minutes1 = parseInt(val1 % 60, 10),
+	// 				hours1 = parseInt(val1 / 60 % 24, 10);
 					
-				var startTime = getTime(hours0, minutes0);
-				var endTime = getTime(hours1, minutes1);
-				$("#time-3").text(startTime + ' - ' + endTime);
-			}
-			function getTime(hours, minutes) {
-				var time = null,
-				minutes = minutes + "";
-				if (hours == 0) {
-					hours = 12;
-				}
-				if (minutes.length == 1) {
-					minutes = "0" + minutes;
-				}
-				return hours + "h" + minutes + "m ";
-			}
-			slideTime();
-		};
-    };
+	// 			var startTime = getTime(hours0, minutes0);
+	// 			var endTime = getTime(hours1, minutes1);
+	// 			$("#time-3").text(startTime + ' - ' + endTime);
+	// 		}
+	// 		function getTime(hours, minutes) {
+	// 			var time = null,
+	// 			minutes = minutes + "";
+	// 			if (hours == 0) {
+	// 				hours = 12;
+	// 			}
+	// 			if (minutes.length == 1) {
+	// 				minutes = "0" + minutes;
+	// 			}
+	// 			return hours + "h" + minutes + "m ";
+	// 		}
+	// 		slideTime();
+	// 	};
+    // };
 
-    var wpt_SliderRange_4 = function(){
-    	if( $().slider ) {
-	    	$("#slider-range-4").slider({
-				range: true,
-				min: 0,
-				max: 1439,
-				values: [540, 1020],
-				slide: slideTime
-			});
-			function slideTime(event, ui){
-				var val0 = $("#slider-range-4").slider("values", 0),
-					val1 = $("#slider-range-4").slider("values", 1),
-					minutes0 = parseInt(val0 % 60, 10),
-					hours0 = parseInt(val0 / 60 % 24, 10),
-					minutes1 = parseInt(val1 % 60, 10),
-					hours1 = parseInt(val1 / 60 % 24, 10);
+    // var wpt_SliderRange_4 = function(){
+    // 	if( $().slider ) {
+	//     	$("#slider-range-4").slider({
+	// 			range: true,
+	// 			min: 0,
+	// 			max: 1439,
+	// 			values: [540, 1020],
+	// 			slide: slideTime
+	// 		});
+	// 		function slideTime(event, ui){
+	// 			var val0 = $("#slider-range-4").slider("values", 0),
+	// 				val1 = $("#slider-range-4").slider("values", 1),
+	// 				minutes0 = parseInt(val0 % 60, 10),
+	// 				hours0 = parseInt(val0 / 60 % 24, 10),
+	// 				minutes1 = parseInt(val1 % 60, 10),
+	// 				hours1 = parseInt(val1 / 60 % 24, 10);
 					
-				var startTime = getTime(hours0, minutes0);
-				var endTime = getTime(hours1, minutes1);
-				$("#time-4").text(startTime + ' - ' + endTime);
-			}
-			function getTime(hours, minutes) {
-				var time = null,
-				minutes = minutes + "";
-				if (hours == 0) {
-					hours = 12;
-				}
-				if (minutes.length == 1) {
-					minutes = "0" + minutes;
-				}
-				return hours + "h" + minutes + "m ";
-			}
-			slideTime();
-		};
-    };
+	// 			var startTime = getTime(hours0, minutes0);
+	// 			var endTime = getTime(hours1, minutes1);
+	// 			$("#time-4").text(startTime + ' - ' + endTime);
+	// 		}
+	// 		function getTime(hours, minutes) {
+	// 			var time = null,
+	// 			minutes = minutes + "";
+	// 			if (hours == 0) {
+	// 				hours = 12;
+	// 			}
+	// 			if (minutes.length == 1) {
+	// 				minutes = "0" + minutes;
+	// 			}
+	// 			return hours + "h" + minutes + "m ";
+	// 		}
+	// 		slideTime();
+	// 	};
+    // };
 
     var wpt__ToggleSidebar = function(){
     	$('.inner-sidebar').each(function() {
@@ -934,10 +934,10 @@
 		wpt_Tab_BestPrice();
 		wpt_Tab_CarSearch();
 		wpt_Capcha();
-		wpt_SliderRange();
-		wpt_SliderRange_1();
-		wpt_SliderRange_3();
-		wpt_SliderRange_4();
+		// wpt_SliderRange();
+		// wpt_SliderRange_1();
+		// wpt_SliderRange_3();
+		// wpt_SliderRange_4();
 		wpt_Add_station();
 		wpt__FilterPrice();
 		wpt__ToggleSidebar();

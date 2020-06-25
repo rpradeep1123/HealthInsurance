@@ -1,12 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { OrderModule } from 'ngx-order-pipe';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CruiseListComponent } from './cruise-list/cruise-list.component';
-import { OnlineFormComponent } from './online-form/online-form.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { CruiseListComponent } from './components/cruise-list/cruise-list.component';
+import { OnlineFormComponent } from './components/online-form/online-form.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +19,16 @@ import { FooterComponent } from './footer/footer.component';
     CruiseListComponent,
     OnlineFormComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    OrderModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

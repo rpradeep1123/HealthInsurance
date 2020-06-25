@@ -29,6 +29,7 @@
 .airlinecontslider img {
     width: 100% !important;
     margin: 0 auto;
+    height:2.5rem;
 }
 .airlinecontslider p {
     margin-bottom: 0;

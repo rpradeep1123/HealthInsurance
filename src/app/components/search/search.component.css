@@ -1,0 +1,13 @@
+.input-info-search .field-row {
+    margin: 0 -8px -8px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link,.nav-pills .nav-link{
+    color:white;
+    background-color: #da3214;
+}
+.nav-pills .nav-link:hover{
+    background-color: black;
+}
+.nav-pills .nav-link{
+    color:white;
+}

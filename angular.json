@@ -24,15 +24,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/css/bootstrap-datetimepicker.min.css",
               "src/assets/css/jquery-ui.css",
+              "src/assets/css/adminlte.min.css",
               "src/assets/css/style.css",
               "src/assets/css/aj-style.css",
               "src/assets/css/responsive.css",
-              "src/assets/css/adminlte.min.css",
               "src/assets/css/slick.css",
               "src/assets/css/icomoon-font.min.css",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss",
               "src/styles.css"
             ],
             "scripts": [
@@ -40,14 +42,16 @@
               "src/assets/js/adminlte.min.js",
               "src/assets/js/tether.min.js",
               "src/assets/js/popper.min.js",
-              "src/assets/js/bootstrap.min.js",
-              "src/assets/js/waypoints.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/js/owl.carousel.js",
-              "src/assets/js/jquery-ui.js",
-              "src/assets/js/bootstrap-datetimepicker.js",              
+              "src/assets/js/bootstrap-datetimepicker.js",
               "src/assets/js/gmap3.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js",
               "src/assets/js/slick.js",
               "src/assets/js/custom.js",
+              "node_modules/jquery-ui/ui/widget.js",
+              "node_modules/jquery-ui/ui/widgets/mouse.js",
+              "node_modules/jquery-ui/ui/widgets/slider.js",
               "src/assets/js/template.js"
             ]
           },
@@ -86,7 +90,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "HealthInsurance:build"
+            "browserTarget": "HealthInsurance:build",
+            "proxyConfig": "src/proxy.conf.json"
           },
           "configurations": {
             "production": {
